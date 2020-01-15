@@ -1,4 +1,5 @@
 # Labels Overweight
+[![Github CI](https://github.com/abimaelmartell/labels-overweight/workflows/Ruby/badge.svg)](https://github.com/abimaelmartell/labels-overweight/actions)
 
 ## Usage
 
