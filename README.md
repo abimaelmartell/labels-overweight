@@ -2,6 +2,7 @@
 [![Github CI](https://github.com/abimaelmartell/labels-overweight/workflows/Ruby/badge.svg)](https://github.com/abimaelmartell/labels-overweight/actions)
 
 ## Usage
+To run you need to setup Fedex Credentials as environment variables, or for development using the `.env` file.
 
 To post the labels json you can use the `labels/batch_create` endpoint like this:
 
