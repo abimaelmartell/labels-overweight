@@ -1,0 +1,51 @@
+<li class="labels-list-element <%= label.is_overweight_parcel? ? "overweight" : "" %>">
+  <h3>Tracking Number: <%= label.tracking_number %></h3>
+
+  <h4>Label Data</h4>
+
+  <table>
+    <tr>
+      <th>Carrier</th>
+      <td><%= label.carrier %></td>
+    </tr>
+
+    <tr>
+      <th>Weight</th>
+      <td><%= number_with_precision(label.carrier_weight_in_kg, precision: 2) %> Kg</td>
+    </tr>
+  </table>
+
+  <h4>Parcel Data</h4>
+
+  <table>
+    <tr>
+      <th>Total Weight</th>
+      <td><%= label.parcel.total_weight_in_kg %> Kg</td>
+    </tr>
+
+    <tr>
+      <th>Weight</th>
+      <td><%= label.parcel.weight_in_kg %> Kg</td>
+    </tr>
+
+    <tr>
+      <th>Volumetric Weight</th>
+      <td><%= label.parcel.volumetric_weight_in_kg %> Kg</td>
+    </tr>
+
+    <tr>
+      <th>Length</th>
+      <td><%= label.parcel.length %></td>
+    </tr>
+
+    <tr>
+      <th>Width</th>
+      <td><%= label.parcel.height %></td>
+    </tr>
+
+    <tr>
+      <th>Height</th>
+      <td><%= label.parcel.height %></td>
+    </tr>
+  </table>
+</li>
